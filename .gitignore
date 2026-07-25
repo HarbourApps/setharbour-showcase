@@ -1,0 +1,52 @@
+# This is a code-showcase repository (selected, sanitised source + docs +
+# screenshots). It is intentionally NOT a runnable Flutter project, so most
+# Flutter build noise should never appear here — but these rules keep it out if
+# anyone opens the snippets in an IDE.
+
+# ── OS temporary files ───────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# ── IDE / editor ─────────────────────────────────────────────────────────────
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.history
+
+# ── Dart / Flutter tooling (should not exist here, ignored defensively) ──────
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+coverage/
+.flutter-plugins
+.flutter-plugins-dependencies
+*.class
+*.log
+
+# ── SECURITY: never commit signing material, keys or secrets ─────────────────
+key.properties
+android/key.properties
+*.jks
+*.keystore
+*.p12
+*.pem
+*.pfx
+.env
+.env.*
+
+# ── Release binaries / archives (not part of a source showcase) ──────────────
+*.apk
+*.aab
+*.zip
+
+# ── Local data / exports (only synthetic samples belong in the repo) ─────────
+*_backup_*.json
+setharbour_backup_*.json
+/backups/
+local.properties
